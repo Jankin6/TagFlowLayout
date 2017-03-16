@@ -40,8 +40,8 @@ public class FlowLayout extends ViewGroup{
     public FlowLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.FlowLayout);
-        mGravity = a.getInt(R.styleable.FlowLayout_gravity, LEFT);
-        mMaxLines = a.getInt(R.styleable.FlowLayout_max_lines, -1);
+        mGravity = a.getInt(R.styleable.FlowLayout_flowlayout_gravity, LEFT);
+        mMaxLines = a.getInt(R.styleable.FlowLayout_flowlayout_max_lines, -1);
         a.recycle();
     }
 
