@@ -32,10 +32,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-version = "1.0.0"
+version = "1.0.1"
 
 def siteUrl = 'https://github.com/wang0826jj/TagFlowLayout'   // 项目的主页
 def gitUrl = 'https://github.com/wang0826jj/TagFlowLayout.git'   // Git仓库的url
+def module_name = 'TagFlowLayout'	// 项目的名称
 group = "com.wangjj"            // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
@@ -44,7 +45,7 @@ install {
             project {
                 packaging 'aar'
                 // Add your description here
-                name 'tagflowlayout'     //项目的描述 你可以多写一点
+                name 'TagFlowLayout'     //项目的描述 你可以多写一点
                 url siteUrl
                 // Set your license
                 licenses {
@@ -55,9 +56,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'jankin'        //填写的一些基本信息
-                        name 'wangjianjun'
-                        email 'wangjj1011@gmail.com'
+                        id 'wang0826jj'        //填写的一些基本信息
+                        name 'wang0826jj'
+                        email 'jianjunwang1012@foxmail.com'
                     }
                 }
                 scm {
@@ -92,9 +93,9 @@ bintray {
     key = properties.getProperty("bintray.apikey")
     configurations = ['archives']
     pkg {
-        userOrg = "jankin"
+//        userOrg = "jankin"
         repo = "maven"
-        name = "TagFlowLayout"    //发布到JCenter上的项目名字
+        name = module_name   //发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]

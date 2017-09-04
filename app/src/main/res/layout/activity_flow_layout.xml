@@ -26,9 +26,32 @@
                     android:layout_height="100dp"
                     android:background="#ffff00"/>
                 <View
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
                     android:background="#0000ff"/>
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:background="#aaaaff"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:background="#ffaa00"/>
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="#ffff00"/>
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="10dp"
+                    android:background="#ff00ff"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#eeffaa"/>
                 <View
                     android:layout_width="40dp"
                     android:layout_height="100dp"
